@@ -7,9 +7,10 @@
 	"description": "A personalized recommendation engine designed to help me find books based on my unique preferences and reading history."
   },
   {
-    "title": "Automated summaries of long texts through automated language processing",
+    "title": "[Master's Thesis] Automated Summarization of Long Documents ",
     "image": "assets/images/project2.jpeg",
-    "link": "https://github.com/username/project2"
+    "link": "projects/project2.html",
+	"description": "Developing and evaluating automated summarization models to effectively summarize long documents. It combines traditional and advanced Transformer-based approaches to meet the requirement."
   }
   
 ]
