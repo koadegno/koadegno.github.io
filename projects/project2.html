@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Summarization of Long Documents</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/project_styles.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+    <main class="content">
+        <!-- Project Title and Introduction -->
+        <section class="project-header">
+            <h1>Automated Summarization of Long Documents</h1>
+            <p>This project is my Master's thesis it explored the complex field of automatic text summarization, focusing on effectively summarizing long documents. As the volume of textual data continues to grow, automated summarization becomes increasingly crucial for efficient information extraction. This project aims to meet that demand by developing and evaluating advanced summarization techniques. </p>
+
+        </section>
+
+        <!-- Project Goals -->
+        <section class="project-goals">
+            <h2>Project Goals</h2>
+            <ul>
+                <li>Collect and process diverse sources of long-form text, including technical reports and market research documents.</li>
+                <li>Develop and evaluate different summarization systems to handle documents with lengths of 10,000 to 70,000 words.</li>
+                <li>Compare different system against internal solution that use GP3-3 </li>
+                <li>Identifying those most suitable for the specific requirements of EEIP (Energy Efficiency in Industrial Processes), an organization dedicated to facilitating the energy transition.</li>
+               
+            </ul>
+        </section>
+        
+        <!-- Data and Approach -->
+        <section class="data-approach">
+            <h2>Data and Approach</h2>
+            <p>The dataset for this project consisted of lengthy documents, such as technical reports and market analyses, containing between 10,000 and 70,000 words. Various summarization models were explored, each leveraging unique methodologies:</p>
+            <ul>
+                <li><strong>Graph-based methods:</strong> Models like TextRank and LexRank, which analyze text structure to identify key sentences.</li>
+                <li><strong>Transformer-based models:</strong> BART, a pre-trained Transformer for summarization tasks, and GPT-3.5-Turbo, a state-of-the-art large language model.</li>
+                <li><strong>Hybrid models:</strong> C2F-FAR (Coarse-to-Fine Facet-Aware Ranking), which combines semantic block identification with sentence ranking for more precise summaries.</li>
+            </ul>
+            <p>Model performance was evaluated using quantitative metrics such as ROUGE and BERTScore, assessing both content relevance and coherence.</p>
+        </section>
+</section>
+
+
+        <!-- Results and Insights -->
+        <section class="results">
+            <h2>Results and Conclusion</h2>
+            <p>The results highlighted the strengths and limitations of each model. GPT-3.5-Turbo and C2F-FAR consistently outperformed other models, achieving high scores across all datasets. These models demonstrated a strong capability to capture key content accurately, making them ideal for summarizing extensive, information-dense texts.</p>
+
+            <h3>What I Learned</h3>
+            <p>This Master's thesis provided invaluable hands-on experience and expanded my expertise in natural language processing and machine learning. Key skills and insights gained include:</p>
+            <ul>
+                <li><strong>Data Pre-processing and Feature Engineering:</strong> Converting PDF and raw textual data into analyzable formats, utilizing techniques such as OCR detection, text cleaning, normalization, and tokenization.</li>
+                <li><strong>Understanding and Developing Summarization Models:</strong> Acquiring an in-depth understanding of various summarization techniques, from traditional graph-based approaches to advanced Transformer models, and applying them to synthesize long documents.</li>
+                <li><strong>Working with Large Language Models (LLMs):</strong> Gaining practical experience in prompt engineering and applying LLMs, like GPT-3.5-Turbo, for effective summarization.</li>
+                <li><strong>Model Evaluation and Analysis:</strong> Using quantitative metrics like ROUGE and BERTScore to assess model performance and identify areas for improvement.</li>
+            </ul>
+        </section>
+
+
+    
+</section>
+
+
+        <!-- Back to Portfolio Button -->
+        <div class="back-btn">
+            <a href="../index.html" class="button">Back to Portfolio</a>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -65,3 +65,7 @@ p {
 .button:hover {
     background-color: #555;
 }
+
+.highlight {
+            font-weight: bold;
+        }
