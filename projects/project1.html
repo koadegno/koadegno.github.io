@@ -2,22 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Customer Segmentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Book Recommendation System</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/project_styles.css">
 </head>
 <body>
 
     <nav class="sidebar">
         <a href="../index.html">Home</a>
-        <a href="../about.html">About</a>
+        <a href="../projects.html">Projects</a>
         <a href="../contact.html">Contact</a>
     </nav>
 
     <main class="content">
-        <h1>Customer Segmentation</h1>
-        <p>Analyzed customer data to identify unique segments for targeted marketing.</p>
-        <img src="../assets/images/project1.png" alt="Customer Segmentation Project Image" style="width:100%; max-width:600px;">
-        <p>Check out the code on <a href="https://github.com/username/project1" target="_blank">GitHub</a>.</p>
+        <!-- Project Title and Introduction -->
+        <section class="project-header">
+            <h1>Personalized Book Recommendation System</h1>
+            <p>This project delivers a personalized book recommendation experience, leveraging data science and machine learning to provide suggestions based on my reading history and preferences.</p>
+        </section>
+
+        <!-- Project Goals -->
+        <section class="project-goals">
+            <h2>Project Goals</h2>
+            <ul>
+                <li>Develop an accurate and user-friendly book recommendation engine.</li>
+                <li>Enable discovery of new books based on user reading history and preferences.</li>
+                <li>Create an interactive website to showcase the recommendations and allow user interaction.</li>
+            </ul>
+        </section>
+
+        <!-- Data and Approach -->
+        <section class="data-approach">
+            <h2>Data and Approach</h2>
+            <p>The dataset includes detailed information on each book, such as <strong>title</strong>, <strong>author</strong>, <strong>release date</strong>, <strong>editor</strong>, <strong>rating</strong>, <strong>summary</strong>, <strong>genre</strong>, and <strong>image</strong> ( <a href="project1_bis.html">more information about data collection</a> ). The recommendation engine uses a (hybrid) <strong>content-based</strong> filtering approach, comparing books and user books based on genre, author, ratings and summaries to recommend similar books.</p>
+			<p>I converted book summaries into <strong>embeddings</strong> using <strong>HuggingFace's French models</strong>. Additionally, genres and authors were <strong>one-hot encoded</strong>, while ratings were <strong>normalized</strong>. The core concept is to calculate <strong>cosine similarity</strong> for each attribute (genre, content, and author) between the books I've read and the entire collection, culminating in a unified <strong>similarity matrix</strong>.</p>
+           
+        </section>
+		<section class="data-approach">
+
+</section>
+
+
+        <!-- Model Development -->
+        <section class="model-development">
+            <h2>Model Development</h2>
+            <p>The recommendation model calculates similarity using <strong>cosine similarity</strong> on book attributes, prioritizing genre, author, rating, and summary content. The content-based model ensures that recommendations are aligned with the user's past reading preferences, especially when genre alignment is crucial.</p>
+            <p>To further refine the recommendation process and mitigate the risk of over-recommending popular genres, I implemented a <strong>genre-weighted scoring system</strong>. This approach balances individual user preferences with genre diversity, allowing for a more personalized experience. Specifically, the model combines scores from various attributes—genre similarity, author similarity, rating similarity and content similarity—using defined weights. This hybrid method enhances the relevance of the recommendations while introducing users to a broader range of books, ultimately fostering a richer reading experience.</p>
+        </section>
+
+
+        <!-- Website Development and Features -->
+        <section class="website-development">
+            <h2>Website Development and Features</h2>
+            <p>The website was built using Streamlit, designed with three main tabs:</p>
+            <ul>
+                <li><strong>All Books:</strong> Displays a Netflix-style grid of all available books, each showing the cover image, title, and author. Clicking on a book reveals its details.</li>
+                <li><strong>My Books:</strong> A personalized library showcasing the books I have read.</li>
+                <li><strong>Recommendations:</strong> Provides a curated list of book suggestions based on my reading history.</li>
+            </ul>
+           
+        </section>
+
+        <!-- Results and Insights -->
+        <section class="results">
+            <h2>Results and Insights</h2>
+            <p>The recommendation engine successfully provided relevant book suggestions, aligning with user (my) preferences. The system's efficiency was validated by user (my) feedback. Thanks to project I am currently reading books from the recommended by the system, enriching my reading experience. <br> Future iterations could incorporate <strong>collaborative filtering</strong> which would use data from other users to enhance the accuracy of recommendations or additionally, integrating <strong>Natural Language Processing (NLP)</strong> and <strong>sentiment analysis</strong> user reviews for enhanced accuracy and personalization.</p>
+        </section>
+
+        <!-- Conclusion and Future Work -->
+        <section class="conclusion">
+            <h2>Conclusion</h2>
+            <p>This personalized recommendation system enhances the reading experience by providing curated suggestions aligned with the user’s interests.</p>
+
+			<h3>What I Learned</h3>
+				<p>This project provided insights into the intricacies of developing a book recommendation system. Here are some key takeaways:</p>
+				<ul>
+					<li><strong>Machine Learning Techniques:</strong> I became proficient in applying machine learning techniques, particularly <strong>cosine similarity</strong> and <strong>content-based filtering</strong>, to create an effective recommendation engine. This experience enhanced my ability to manipulate and analyze data to extract meaningful insights.</li>
+					<li><strong>Hybrid Recommendation Systems:</strong> I learned about the advantages of combining different recommendation approaches. Integrating different content-based matrix can significantly improve the accuracy and relevance of recommendations.</li>
+					<li><strong>Natural Language Processing:</strong> Exploring NLP techniques for text embedding provided me with a greater understanding of how to extract value from text.</li>
+					
+				</ul>
+        </section>
+		<!-- What I Learned -->
+<section class="what-i-learned">
+    
+</section>
+
+
+        <!-- Back to Portfolio Button -->
+        <div class="back-btn">
+            <a href="../index.html" class="button">Back to Portfolio</a>
+        </div>
     </main>
 
 </body>

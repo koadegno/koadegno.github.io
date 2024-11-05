@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collection Data</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/project_styles.css">
+</head>
+<body>
+	<nav class="sidebar">
+        <a href="../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+	<main class="content">
+		<section class="project-header">
+			<h1>French Book Data Collection Process</h1>
+			<p>This project involves scraping book details from a specified online source. The goal is to collect comprehensive information about each book in french, including title, author, publication date, editor, rating, summary, and genre, as well as images for visual representation. The steps below detail the data collection process used :</p>
+
+		</section>
+		
+		<section class="project-goals">
+            <h2>Project Goals</h2>
+            <ul>
+                <li>Building a dataset with french book information </li>
+            </ul>
+        </section>
+
+		<section class="data-approach">
+			<h2>Data Collection Methodology</h2>
+			<ul>
+				<li><strong>Page Navigation:</strong> The script first retrieves all book pages by accessing paginated URLs, which contain multiple books per page. Each page's HTML is parsed to gather individual book URLs.</li>
+			
+				<li><strong>Data Extraction:</strong> For each book URL, the code extracts:
+					<ul>
+						<li><strong>Title and Author:</strong> The title and author are located within specific HTML tags. The script handles variations in formatting by using multiple strategies to locate the data, improving data reliability.</li>
+						<li><strong>Release Date, Editor, and EAN:</strong> These details are collected from metadata sections on each book's page, and only the release year is extracted from the full date format.</li>
+						<li><strong>Rating:</strong> The script calculates an approximate rating based on filled star elements on the page.</li>
+						<li><strong>Summary:</strong> The book summary is retrieved from a structured content block, and special characters are removed to create a cleaner format.</li>
+						<li><strong>Genre:</strong> The genre is retrieved once per main URL page, representing the category of all books on that page.</li>
+					</ul>
+				</li>
+				
+				<li><strong>Image Processing:</strong> Each book's cover image is retrieved and resized for optimized display on different parts of the application. Images are encoded in base64 format to be used directly in the application.</li>
+				
+				<li><strong>Error Handling:</strong> The script includes robust error-handling mechanisms to manage missing data or connection issues. Each extraction step is wrapped in a try-except block to log any errors encountered and avoid interruption of the scraping process.</li>
+				
+				<li><strong>Data Caching and Restart:</strong> The program caches the URLs already processed to avoid re-scraping. It also supports resuming from where it last left off, which is useful in case of interruptions.</li>
+			</ul>
+
+		</section>
+		
+
+		<section class="data-approach">
+			<h2>Data Post-Processing</h2>
+			<p>After the initial data collection, post-processing steps were implemented to ensure data quality and usability:</p>
+			<ul>
+				<li><strong>Data Cleaning:</strong> Removed any duplicates and entries with missing critical information such as titles or authors. This step helps maintain the integrity of the dataset.</li>
+
+				<li><strong>Final Dataset Creation:</strong> Compiled all the processed data into a final CSV file, ready for analysis or presentation.</li>
+			</ul>
+		</section>
+
+		<br>
+		<p>The data collected is then saved in a CSV format, allowing for easy analysis and visualization in subsequent parts of the project.</p>
+
+		<div class="back-btn">
+            <a href="project1.html" class="button">Back to Book Recommendation Project</a>
+        </div>
+	</main>
+</body>
+</html>
