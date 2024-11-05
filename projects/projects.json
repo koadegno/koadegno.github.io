@@ -1,13 +1,15 @@
 
 [
   {
-    "title": "Customer Segmentation",
-    "image": "images/banner_pic.jpg",
-    "link": "https://github.com/username/project1"
+    "title": "Personalized Book Recommendations System",
+    "image": "assets/images/project1.jpeg",
+    "link": "https://github.com/username/project1",
+	"description": "A personalized recommendation engine designed to help me find books based on my unique preferences and reading history."
   },
   {
-    "title": "Real-Time Sentiment Analysis",
-    "image": "images/banner_pic.jpg",
+    "title": "Automated summaries of long texts through automated language processing",
+    "image": "assets/images/project2.jpeg",
     "link": "https://github.com/username/project2"
   }
+  
 ]

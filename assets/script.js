@@ -12,7 +12,8 @@ function loadProjects() {
                     <a href="${project.link}">
                         <img src="${project.image}" alt="${project.title}">
                         <h3>${project.title}</h3>
-                    </a>
+					</a>
+					<p alt="No Description"> ${project.description}</p>
                 `;
 
                 projectsSection.appendChild(card);
