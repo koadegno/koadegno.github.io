@@ -7,10 +7,16 @@
 	"description": "A personalized recommendation engine designed to help me find books based on my unique preferences and reading history."
   },
   {
-    "title": "[Master's Thesis] Automated Summarization of Long Documents ",
+    "title": "Automated Summarization of Long Documents",
     "image": "assets/images/project2.jpeg",
     "link": "projects/project2.html",
 	"description": "Developing and evaluating automated summarization models to effectively summarize long documents. It combines traditional and advanced Transformer-based approaches to meet the requirement."
+  },
+   {
+    "title": "Predict H1N1 and Seasonal Flu Vaccines",
+    "image": "assets/images/project2.jpeg",
+    "link": "projects/project3.html",
+	"description": "Predict whether people got H1N1 and seasonal flu vaccines using information they shared about their backgrounds, opinions, and health behaviors? Using DrivenData datasets"
   }
   
 ]

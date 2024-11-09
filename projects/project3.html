@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict H1N1 and Seasonal Flu Vaccines</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/project_styles.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+    <main class="content">
+        <!-- Project Title and Introduction -->
+        <section class="project-header">
+            <h1>Predict <strong>H1N1</strong> and <strong>Seasonal Flu</strong> Vaccines</h1>
+            <p>This project aims to predict the likelihood of individuals receiving the <strong>H1N1</strong> and <strong>seasonal flu vaccines</strong>. Using datasets that include both raw and engineered features, I develop predictive models to address this multilabel classification problem.</p>
+        </section>
+
+        <!-- Project Goals -->
+        <section class="project-goals">
+            <h2><strong>Project Goals</strong></h2>
+            <ul>
+                <li><strong>Develop a model</strong> that predicts two labels: <strong>H1N1</strong> and seasonal vaccine uptake.</li>
+                <li><strong>Apply preprocessing and feature selection/reduction techniques</strong>, including PCA, to improve model performance.</li>
+            </ul>
+        </section>
+        
+        <!-- Data and Approach -->
+        <section class="data-approach">
+            <h2><strong>Data and Approach</strong></h2>
+            <p>The dataset for this project was provided by 
+			<a href="https://www.drivendata.org/competitions/66/flu-shot-learning/"><strong>DrivenData</strong> </a>	as part of the competition. It contains <strong>26,707 rows</strong> and <strong>36 variables</strong>.</p>
+            
+            <h3><strong>Exploratory Data Analysis (EDA)</strong></h3>
+            <p>I began by conducting an <strong>exploratory data analysis</strong> (EDA) to identify missing data, understand feature types, and detect potential issues such as outliers. 
+                In the univariate analysis, I visualized the distribution of key categorical variables like <strong>employment status</strong>, <strong>marital status</strong>, and <strong>health insurance coverage</strong>. This highlighted any imbalances in the data.
+            </p>
+            <p>For the multivariate analysis, I encoded categorical features, using <strong>one-hot encoding</strong> for nominal features and <strong>ordinal encoding</strong> for ordered categories, resulting in <strong>86 features</strong>. 
+                A correlation matrix was computed to analyze relationships between features. Features with a correlation greater than <strong>0.5</strong> were identified, and redundant features were removed. 
+                This step reduced the dimensionality while maintaining essential information, excluding <strong>19 features</strong>.
+            </p>
+            
+            <h3><strong>Data Cleaning and Preprocessing</strong></h3>
+            <p>For handling missing data, I implemented three strategies to evaluate the best approach based on data retention and quality:</p>
+            <ul>
+                <li><strong>Null Removal:</strong> Dropping rows with null values provided a quick solution but significantly reduced the dataset size.</li>
+                <li><strong>Mode Imputation:</strong> Filling missing values with the most frequent (<strong>mode</strong>) value maintained dataset size without drastically changing feature distributions.</li>
+                <li><strong>K-Nearest Neighbors Imputation:</strong> I used a <strong>KNN imputer</strong> to fill missing values based on the similarity of data points, applied to categorical data.</li>
+            </ul>
+
+            <h3><strong>Model Development</strong></h3>
+            <p>I constructed datasets based on feature engineering: one with raw features and missing values handled by mode and KNN imputations, and another with <strong>PCA-transformed features</strong>. 
+                The model-building strategy involved separate <strong>logistic regression models</strong> for each vaccine label (<strong>H1N1</strong> and <strong>seasonal flu</strong>).
+            </p>
+        </section>
+
+        <!-- Results and Insights -->
+        <section class="results">
+            <h2><strong>Results and Insights</strong></h2>
+            <p>After building the models, I evaluated their performance using metrics like <strong>accuracy</strong>, <strong>precision</strong>, <strong>recall</strong>, <strong>F1-score</strong> for both vaccine labels, and the mean of <strong>ROC AUC</strong> of both models.  The models performed well, with notable accuracy for both labels, but further optimization can improve the results.</p>
+            
+            <h3><strong>What I Learned</strong></h3>
+            <ul>
+                <li><strong>Feature engineering</strong> </li>
+                <li><strong>Handling missing data</strong> </li>
+                <li><strong>Dimensionality reduction</strong>.</li>
+            </ul>
+        </section>
+
+        <!-- Back to Portfolio Button -->
+        <div class="back-btn">
+            <a href="../index.html" class="button"><strong>Back to Portfolio</strong></a>
+        </div>
+    </main>
+
+</body>
+</html>
