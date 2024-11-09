@@ -13,8 +13,21 @@ function loadProjects() {
                         <img src="${project.image}" alt="${project.title}">
                         <h3>${project.title}</h3>
 					</a>
+					<div class="year">${project.year || 'N/A'}</div>
 					<p alt="No Description"> ${project.description}</p>
                 `;
+
+				// card.innerHTML = `
+                //     <img src="${project.image}" alt="${project.title}">
+                //     <div class="content">
+                //         <a href="${project.link}">
+                //             <h3>${project.title}</h3>
+                //         </a>
+                //         <div class="year">${project.year || 'N/A'}</div>
+                //         <p>${project.description || 'No Description'}</p>
+                //     </div>
+                // `;
+
 
                 projectsSection.appendChild(card);
             });
