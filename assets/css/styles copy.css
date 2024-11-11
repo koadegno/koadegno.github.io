@@ -1310,22 +1310,14 @@ ul {
 }
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     padding: 20px 0;
 }
 
-.header2 {
-    margin-bottom: 20px;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 15px;
-}
 
 .project-card {
-    width: 250px;
+    width: 220px;
     text-align: center;
     border-radius: 8px;
     overflow: hidden;
@@ -1364,7 +1356,7 @@ ul {
 
 .project-card .year {
     background-color: #f8f8f8;
-    padding: 5px;
+    padding: 2px;
     font-size: 0.9em;
     color: #333;
 }

@@ -2,24 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="assets/css/styles copy.css">
 </head>
-<body>
+<body class="mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-sans antialiased">
 
-    <nav class="sidebar">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+	<script>!function () { try { var d = document.documentElement, c = d.classList; c.remove('light', 'dark'); var e = localStorage.getItem('theme'); if ('system' === e || (!e && true)) { var t = '(prefers-color-scheme: dark)', m = window.matchMedia(t); if (m.media !== t || m.matches) { d.style.colorScheme = 'dark'; c.add('dark') } else { d.style.colorScheme = 'light'; c.add('light') } } else if (e) { c.add(e || '') } if (e === 'light' || e === 'dark') d.style.colorScheme = e } catch (e) { } }()</script>
 
-    <main class="content">
-         <div class="header2">
-            <h1>Projects</h1>
-        </div>
+	<!-- Header Navigation Bar -->
+	<header class="sticky top-0 z-50 bg-background\75 py-6 backdrop-blur-sm px-10">
+		<nav class="flex items-center justify-between">
+			<ul class="flex gap-4 sm:gap-8">
+				<li class="link"> <a href="index.html">Home</a></li>
+				<li class="link"> <a href="projects.html">Projects</a></li>
+				<li class="link"> <a href="contact.html">Contact</a></li>
+	
+			</ul>
+	
+	
+		</nav>
+	
+	</header>
+
+    <main class="grow">
+		<article class="mt-8 flex flex-col gap-8 pb-16 md:items-center">
+			<div class="title ">
+				<h1>My Projects</h1>
+			</div>
+
+			<section class="projects flex flex-wrap" id="projects-section">
+				
+			</section>
+		</article>
+         
         
-        <section class="projects" id="projects-section">
-        </section>
+        
         <script src="assets/script.js"></script>
     </main>
 
