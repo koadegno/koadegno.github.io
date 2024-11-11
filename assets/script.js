@@ -7,7 +7,6 @@ function loadProjects() {
             data.forEach(project => {
                 const card = document.createElement('div');
 				card.classList.add("rounded-xl", "border", "bg-card", "text-card-foreground", "shadow", "flex", "flex-col");
-				// card.className = 'project-card';
 
 				// Image loading
 				const cardImg = document.createElement("div");
@@ -26,12 +25,6 @@ function loadProjects() {
 				</div>
 				`;
 				card.appendChild(cardText);
-
-				// <div class="mt-2 flex-col p-6 pt-0 flex ">
-				// 	<a href="${project.link}">View Project</a>
-				
-				// </div>
-				// make the View Project  link be at the same position in each cards
 
 				// Add tools to the card
 				const cardTools = document.createElement('div');
@@ -72,9 +65,6 @@ function loadProjects() {
 					cardTools.appendChild(buttonsDiv)
 
 				}
-
-
-
 
 				card.appendChild(cardTools);
 

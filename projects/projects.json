@@ -2,14 +2,16 @@
 	{
 		"title": "Predict H1N1 and Seasonal Flu Vaccines",
 		"image": "assets/images/project3.jpeg",
-		"link": "projects/project3.html",
-		"description": "Predict whether people got H1N1 and seasonal flu vaccines using information they shared about their backgrounds, opinions, and health behaviors, using DrivenData datasets.",
+		"link": "",
+		"description": "Predict whether people received H1N1 and seasonal flu vaccines using information they shared about their backgrounds, opinions, and health behaviors, using DrivenData datasets and using various models.",
 		"year": 2024,
 		"tools": [
 			"Python",
 			"Pandas",
 			"Matplotlib/Seaborn",
 			"Scikit-learn",
+			"Logistic Regression",
+			"Random Forest",
 			"XGBoost",
 			"PyTorch",
 			"Git"
@@ -19,8 +21,8 @@
 	{
 		"title": "Personal Book Recommendations System",
 		"image": "assets/images/project1.jpeg",
-		"link": "projects/project1.html",
-		"description": "A personalized recommendation engine designed to help me find books based on my preferences and reading history. The dataset was scrapped from french websites.",
+		"link": "",
+		"description": "A personalized recommendation system that uses my reading preferences and history to suggest me books. The dataset was scrapped from French websites into CSV file.",
 		"year": 2024,
 		"tools": [
 			"Python",
@@ -35,8 +37,8 @@
 	{
 		"title": "Automated Summarization of Long Documents",
 		"image": "assets/images/project2.jpeg",
-		"link": "projects/project2.html",
-		"description": "Developing and evaluating automated summarization models to effectively summarize long documents. It combines traditional and advanced Transformer-based approaches to meet the requirement.",
+		"link": "",
+		"description": "Developing and evaluating automated summarization models to effectively summarize long documents. The best model combines traditional and advanced Transformer-based approaches.",
 		"year": 2024,
 		"tools": [
 			"Python",
