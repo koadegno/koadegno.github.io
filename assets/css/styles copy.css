@@ -322,6 +322,11 @@ strong {
 	height: 1.25rem
 }
 
+.size-7 {
+	width: 1.5rem;
+	height: 1.5rem
+}
+
 .h-10 {
 	height: 2.5rem
 }
@@ -704,6 +709,11 @@ ul {
 .px-8 {
 	padding-left: 2rem;
 	padding-right: 2rem
+}
+
+.px-10 {
+	padding-left: 16rem;
+	padding-right: 10rem
 }
 
 .py-0 {
