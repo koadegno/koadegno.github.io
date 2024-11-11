@@ -122,7 +122,7 @@ html {
 	--font-sans: "Times New Roman", Times, serif;
 	--background: 224 71.4% 4.1%;
 	--foreground: 210 20% 98%;
-	--card: 224 71.4% 4.1%;
+	--card: 224 71.4% 5.1%;
 	--card-foreground: 210 20% 98%;
 	--popover: 224 71.4% 4.1%;
 	--popover-foreground: 210 20% 98%;
@@ -467,6 +467,10 @@ strong {
 	grid-template-columns: repeat(2, minmax(0, 1fr))
 }
 
+.grid-cols-3 {
+	grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+
 .flex-row {
 	flex-direction: row
 }
@@ -659,6 +663,35 @@ ul {
 	gap: 2rem
 }
 
+.space-x-3>:not([hidden])~:not([hidden]) {
+	--tw-space-x-reverse: 0;
+	margin-right: calc(.75rem * var(--tw-space-x-reverse));
+	margin-left: calc(.75rem * calc(1 - var(--tw-space-x-reverse)))
+}
+
+.space-y-1\.5>:not([hidden])~:not([hidden]) {
+	--tw-space-y-reverse: 0;
+	margin-top: calc(.375rem * calc(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(.375rem * var(--tw-space-y-reverse))
+}
+
+.space-y-4>:not([hidden])~:not([hidden]) {
+	--tw-space-y-reverse: 0;
+	margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(1rem * var(--tw-space-y-reverse))
+}
+
+.object-contain {
+	object-fit: contain
+}
+
+.object-cover {
+	object-fit: cover
+}
+
+.object-top {
+	object-position: top
+}
 
 .p-0 {
 	padding: 0
@@ -794,6 +827,9 @@ ul {
 
 	.sm\:grid-cols-2 {
 		grid-template-columns: repeat(2, minmax(0, 1fr))
+	}
+	.sm\:grid-cols-3 {
+		grid-template-columns: repeat(3, minmax(0, 1fr))
 	}
 
 	.sm\:flex-row {
@@ -1315,6 +1351,9 @@ ul {
     padding: 20px 0;
 }
 
+.grid-cols-1 {
+	grid-template-columns: repeat(1, minmax(0, 1fr))
+}
 
 .project-card {
     width: 220px;
@@ -1324,7 +1363,7 @@ ul {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s;
     /* height: 100%; */
-    display: flex;
+    display: grid;
     flex-direction: column;
 }
 
