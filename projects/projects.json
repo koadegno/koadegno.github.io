@@ -8,19 +8,19 @@
 		"tools": [
 			"Python",
 			"Pandas",
-			"Jupyter Notebooks",
 			"Matplotlib/Seaborn",
 			"Scikit-learn",
 			"XGBoost",
-			"TensorFlow or PyTorch",
+			"PyTorch",
 			"Git"
-		]
+		],
+		"code_link":"https://github.com/koadegno/predict-flu-vaccines"
 	},
 	{
 		"title": "Personal Book Recommendations System",
 		"image": "assets/images/project1.jpeg",
 		"link": "projects/project1.html",
-		"description": "A personalized recommendation engine designed to help me find books based on my unique preferences and reading history.",
+		"description": "A personalized recommendation engine designed to help me find books based on my preferences and reading history. The dataset was scrapped from french websites.",
 		"year": 2024,
 		"tools": [
 			"Python",
@@ -29,7 +29,8 @@
 			"Selenium",
 			"Web Scrapping",
 			"Git"
-		]
+		],
+		"code_link": ""
 	},
 	{
 		"title": "Automated Summarization of Long Documents",
@@ -40,13 +41,12 @@
 		"tools": [
 			"Python",
 			"Pandas",
-			"Jupyter Notebooks",
-			"Matplotlib",
 			"Hugginface",
 			"NLP",
 			"Bart/GPT-3/C2F-FAR",
 			"PyTorch",
 			"Git"
-		]
+		],
+		"code_link": ""
 	}
 ]

@@ -483,6 +483,10 @@ strong {
 	flex-wrap: wrap
 }
 
+.no-flex-wrap {
+	flex-wrap: nowrap
+}
+
 .flex {
 	display: flex
 }
@@ -629,6 +633,9 @@ ul {
 	justify-content: space-between
 }
 
+.overflow-auto {
+	overflow-x: auto
+}
 
 
 .gap-0 {
