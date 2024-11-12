@@ -14,6 +14,7 @@
 			"Random Forest",
 			"XGBoost",
 			"PyTorch",
+			"BayesSearch/GridSearch",
 			"Git"
 		],
 		"code_link":"https://github.com/koadegno/predict-flu-vaccines"
