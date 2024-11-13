@@ -20,10 +20,42 @@
 		"code_link":"https://github.com/koadegno/predict-flu-vaccines"
 	},
 	{
+		"title": "Stock Price Prediction using PySpark and Yahoo API",
+		"image": "assets/images/project4.jpg",
+		"link": "",
+		"description": "The PySpark process is divided into two parts, the sender and the receiver, they use sockets to communicate. The sender fetches stock data from the Yahoo Finance API and preprocess it. On\n the receiver side, it processes the data in batches to predict stock prices using Linear Regression and Neural Networks. The system handles large-scale data processing and prediction, enabling effective stock price forecasting.",
+		"year": 2024,
+		"tools": [
+			"Python",
+			"Pandas",
+			"PySpark",
+			"Yahoo Finance API",
+			"Neural Networks",
+			"Git",
+			"Team Project"
+		],
+		"code_link": ""
+	},
+	{
 		"title": "Personal Book Recommendations System",
 		"image": "assets/images/project1.jpeg",
 		"link": "",
-		"description": "A personalized recommendation system that uses my reading preferences and history to suggest me books. The dataset was scrapped from French websites into CSV file.",
+		"description": "A personalized recommendation system that uses my reading preferences and history to suggest me books.",
+		"year": 2024,
+		"tools": [
+			"Python",
+			"Pandas",
+			"Huggingface",
+			"Streamlit",
+			"Git"
+		],
+		"code_link": ""
+	},
+	{
+		"title": "French Book Data Collection Process",
+		"image": "assets/images/project1_bis.jpg",
+		"link": "",
+		"description": "Pipeline to scrape web page and collect data about French books. The datasets was stored in a csv file with more than 50,000 books",
 		"year": 2024,
 		"tools": [
 			"Python",
@@ -35,6 +67,7 @@
 		],
 		"code_link": ""
 	},
+	
 	{
 		"title": "Automated Summarization of Long Documents",
 		"image": "assets/images/project2.jpeg",
@@ -44,9 +77,9 @@
 		"tools": [
 			"Python",
 			"Pandas",
-			"Hugginface",
+			"Huggingface",
 			"NLP",
-			"Bart/GPT-3/C2F-FAR",
+			"Bart / GPT-3 / C2F-FAR",
 			"PyTorch",
 			"Git"
 		],
