@@ -237,7 +237,7 @@ strong {
 
 .mx-auto {
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
 }
 
 .mb-2 {
@@ -306,10 +306,6 @@ strong {
 
 .min-h-screen {
 	min-height: 100vh
-}
-
-.max-w-3xl {
-	max-width: 48rem
 }
 
 .size-12 {
@@ -427,9 +423,21 @@ strong {
 .w-full {
 	width: 100%
 }
+.section-max-w-none{
+	max-width: none;
+	width: 100%;
+}
 
 .max-w-3xl {
 	max-width: 48rem
+}
+
+.max-w-4xl {
+	max-width: 68rem
+}
+
+h1.title {
+	text-align: center;
 }
 
 .max-w-64 {
@@ -775,6 +783,11 @@ ul {
 .px-10 {
 	padding-left: 16rem;
 	padding-right: 10rem
+}
+
+.px-12 {
+	padding-left: 26rem;
+	padding-right: 14rem
 }
 
 .py-0 {
