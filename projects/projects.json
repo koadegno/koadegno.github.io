@@ -1,5 +1,22 @@
 [
 	{
+		"title": "H&M Personalized Fashion Recommendations System",
+		"image": "assets/images/project6.jpg",
+		"link": "",
+		"description": "Using the purchase history of customers along with metadata about articles to predict whether which articles the customers will purchase in the future days.",
+		"year": 2024,
+		"tools": [
+			"Python",
+			"Pandas",
+			"Matplotlib/Seaborn",
+			"PyTorch",
+			"Two Tower Models",
+			"MLflow",
+			"Git"
+		],
+		"code_link": "https://github.com/koadegno/H_M_Personalized_Fashion_Recommendations"
+	},
+	{
 		"title": "Predict H1N1 and Seasonal Flu Vaccines",
 		"image": "assets/images/project3.jpeg",
 		"link": "",
