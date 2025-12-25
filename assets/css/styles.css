@@ -1083,6 +1083,11 @@ ul {
 	font-size: 10px
 }
 
+.tech-badge {
+	font-size: 12px;
+	padding: 0.25rem 0.5rem;
+}
+
 .text-base {
 	font-size: 1rem;
 	line-height: 1.5rem
@@ -1131,6 +1136,82 @@ p {
 .cta-icon {
 	width: 1.1rem;
 	height: 1.1rem
+}
+
+.timeline-row {
+	display: grid;
+	grid-template-columns: 90px 1fr;
+	gap: 1.5rem;
+	position: relative;
+	padding-bottom: 2rem;
+}
+
+.timeline-year {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding-top: .35rem;
+	padding-left: 1.25rem;
+	color: hsl(var(--foreground));
+	font-family: var(--font-serif);
+	font-size: 1.4rem;
+	letter-spacing: .02em;
+}
+
+.timeline-year::before {
+	content: "";
+	position: absolute;
+	left: .35rem;
+	top: 0;
+	bottom: -2rem;
+	width: 2px;
+	background: hsl(var(--border));
+	opacity: .7;
+}
+
+.timeline-dot {
+	position: absolute;
+	left: .35rem;
+	top: .55rem;
+	width: .7rem;
+	height: .7rem;
+	border-radius: 999px;
+	background: hsl(var(--foreground));
+	box-shadow: 0 0 0 4px hsl(var(--background));
+}
+
+.timeline-grid {
+	display: grid;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+@media (min-width: 640px) {
+	.timeline-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1rem;
+	}
+}
+
+@media (max-width: 640px) {
+	.timeline-row {
+		grid-template-columns: 1fr;
+	}
+	.timeline-year {
+		justify-content: flex-start;
+		padding-top: 0;
+	}
+	.timeline-year::before,
+	.timeline-dot {
+		display: none;
+	}
+}
+
+#projects-section {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
 }
 
 .text-xs {
