@@ -4,17 +4,67 @@ function loadProjects() {
         .then(response => response.json())
         .then(data => {
             const projectsSection = document.getElementById('projects-section');
+            const parseDateInfo = (value) => {
+                if (!value) return null;
+                const raw = String(value).trim();
+                const parts = raw.split("/");
+                if (parts.length === 3) {
+                    const [day, month, year] = parts.map(n => parseInt(n, 10));
+                    if (!Number.isNaN(day) && !Number.isNaN(month) && !Number.isNaN(year)) {
+                        return {
+                            year,
+                            granularity: 3,
+                            time: new Date(year, month - 1, day, 23, 59, 59, 999).getTime(),
+                        };
+                    }
+                }
+                if (parts.length === 2) {
+                    const [month, year] = parts.map(n => parseInt(n, 10));
+                    if (!Number.isNaN(month) && !Number.isNaN(year)) {
+                        return {
+                            year,
+                            granularity: 2,
+                            time: new Date(year, month - 1, 1, 0, 0, 0, 0).getTime(),
+                        };
+                    }
+                }
+                if (parts.length === 1) {
+                    const year = parseInt(parts[0], 10);
+                    if (!Number.isNaN(year)) {
+                        return {
+                            year,
+                            granularity: 1,
+                            time: new Date(year, 0, 1, 0, 0, 0, 0).getTime(),
+                        };
+                    }
+                }
+                return null;
+            };
+
             data.sort((a, b) => {
-                const yearA = Number(a.year) || 0;
-                const yearB = Number(b.year) || 0;
+                const infoA = parseDateInfo(a.date);
+                const infoB = parseDateInfo(b.date);
+                const yearA = infoA ? infoA.year : -Infinity;
+                const yearB = infoB ? infoB.year : -Infinity;
                 if (yearA !== yearB) {
                     return yearB - yearA;
+                }
+                const granA = infoA ? infoA.granularity : 0;
+                const granB = infoB ? infoB.granularity : 0;
+                if (granA !== granB) {
+                    return granB - granA;
+                }
+                const timeA = infoA ? infoA.time : -Infinity;
+                const timeB = infoB ? infoB.time : -Infinity;
+                if (timeA !== timeB) {
+                    return timeB - timeA;
                 }
                 return String(a.title || "").localeCompare(String(b.title || ""), undefined, { sensitivity: "base" });
             });
             const groups = new Map();
             data.forEach(project => {
-                const yearKey = project.year ? String(project.year) : "Sans année";
+                const info = parseDateInfo(project.date);
+                const yearKey = info ? String(info.year) : "Sans année";
                 if (!groups.has(yearKey)) {
                     groups.set(yearKey, []);
                 }
@@ -46,7 +96,11 @@ function loadProjects() {
                     // Image loading
                     const cardImg = document.createElement("div");
                     cardImg.classList.add("flex", "flex-col", "space-y-1.5", "p-6");
-                    cardImg.innerHTML = `<img class="h-32 max-w-full object-cover object-top" src="${project.image}" width="500" height="300" alt="${project.title} style="color:transparent"">`;
+                    cardImg.innerHTML = `
+                        <div class="aspect-4-3">
+                            <img class="w-full h-full object-cover object-top" src="${project.image}" alt="${project.title}">
+                        </div>
+                    `;
                     card.appendChild(cardImg);
 
                     // Title and description text loading

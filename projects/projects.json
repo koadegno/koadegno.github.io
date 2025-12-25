@@ -1,250 +1,225 @@
 [
-  {
-    "title": "H&M Personalized Fashion Recommendations System",
-    "image": "assets/images/project6.jpg",
-    "link": "",
-    "description": "Using the purchase history of customers along with metadata about articles to predict whether which articles the customers will purchase in the future days.",
-    "year": 2024,
-    "tools": [
-      "Python",
-      "Pandas",
-      "Matplotlib/Seaborn",
-      "PyTorch",
-      "Two Tower Models",
-      "MLflow",
-      "Git"
-    ],
-    "code_link": "https://github.com/koadegno/H_M_Personalized_Fashion_Recommendations"
-  },
-  {
-    "title": "Predict H1N1 and Seasonal Flu Vaccines",
-    "image": "assets/images/project3.jpeg",
-    "link": "",
-    "description": "Predict whether people received H1N1 and seasonal flu vaccines using information they shared about their backgrounds, opinions, and health behaviors, using DrivenData datasets and using various models.",
-    "year": 2024,
-    "tools": [
-      "Python",
-      "Pandas",
-      "Matplotlib/Seaborn",
-      "Scikit-learn",
-      "Logistic Regression",
-      "Random Forest",
-      "XGBoost",
-      "PyTorch",
-      "BayesSearchCV / GridSearchCV",
-      "Git"
-    ],
-    "code_link": "https://github.com/koadegno/predict-flu-vaccines"
-  },
-  {
-    "title": "Stock Price Prediction using PySpark and Yahoo API",
-    "image": "assets/images/project4.jpg",
-    "link": "",
-    "description": "The PySpark process is divided into two parts, the sender and the receiver, they use sockets to communicate. The sender fetches stock data from the Yahoo Finance API and preprocess it. On\n the receiver side, it processes the data in batches to predict stock prices using Linear Regression and Neural Networks. The system handles large-scale data processing and prediction, enabling effective stock price forecasting.",
-    "year": 2024,
-    "tools": [
-      "Python",
-      "Pandas",
-      "PySpark",
-      "Yahoo Finance API",
-      "Neural Networks",
-      "Git",
-      "Team Project"
-    ],
-    "code_link": ""
-  },
-  {
-    "title": "Personal Book Recommendations System",
-    "image": "assets/images/project1.jpeg",
-    "link": "",
-    "description": "A personalized recommendation system that uses my reading preferences and history to suggest me books.",
-    "year": 2024,
-    "tools": [
-      "Python",
-      "Pandas",
-      "Huggingface",
-      "Streamlit",
-      "Git"
-    ],
-    "code_link": ""
-  },
-  {
-    "title": "French Book Data Collection Process",
-    "image": "assets/images/project1_bis.jpg",
-    "link": "",
-    "description": "Pipeline to scrape web page and collect data about French books. The datasets was stored in a csv file with more than 50,000 books",
-    "year": 2024,
-    "tools": [
-      "Python",
-      "Pandas",
-      "Numpy",
-      "Selenium",
-      "Web Scrapping",
-      "Git"
-    ],
-    "code_link": ""
-  },
-  {
-    "title": "Automated Summarization of Long Documents",
-    "image": "assets/images/project2.jpeg",
-    "link": "",
-    "description": "Developing and evaluating automated summarization models to effectively summarize long documents. The best model combines traditional and advanced Transformer-based approaches.",
-    "year": 2024,
-    "tools": [
-      "Python",
-      "Pandas",
-      "Huggingface",
-      "NLP",
-      "Bart / GPT-3 / C2F-FAR",
-      "PyTorch",
-      "Git"
-    ],
-    "code_link": ""
-  },
-  {
-    "title": "SIP Audio Translation POC",
-    "description": "Proof-of-concept for SIP call audio translation using Asterisk and a FastAPI bridge.",
-    "tools": [
-      "Python",
-      "FastAPI",
-      "Asterisk",
-      "Docker"
-    ],
-    "image": "assets/images/project1.jpeg",
-    "link": "",
-    "year": 2025,
-    "code_link": ""
-  },
-  {
-    "title": "Multimodal Capture Q&A Assistant",
-    "description": "Agentic chatbot that answers questions based on recorded webcam/audio sessions using vector search.",
-    "tools": [
-      "Python",
-      "FastAPI",
-      "Chainlit",
-      "Qdrant",
-      "LiteLLM",
-      "Docker"
-    ],
-    "image": "assets/images/project1_bis.jpg",
-    "link": "",
-    "year": 2025,
-    "code_link": ""
-  },
-  {
-    "title": "NL-to-SQL Analytics Assistant",
-    "description": "Natural-language to SQL assistant that generates CSV/Excel reports with validation and location tooling (postcode lookup, radius search, and municipality matching).",
-    "tools": [
-      "Python",
-      "FastAPI",
-      "Chainlit",
-      "SQLAlchemy",
-      "LiteLLM",
-      "Shapely"
-    ],
-    "image": "assets/images/project3.jpeg",
-    "link": "",
-    "year": 2025,
-    "code_link": ""
-  },
-  {
-    "title": "Self-Hosted MLOps Server",
-    "description": "Self-hosted experiment tracking and artifact management stack for ML teams.",
-    "tools": [
-      "ClearML",
-      "Docker",
-      "Python"
-    ],
-    "image": "assets/images/project4.jpg",
-    "link": "",
-    "year": 2025,
-    "code_link": ""
-  },
-  {
-    "title": "Model Evaluation & Benchmarking",
-    "description": "Model evaluation framework exploration for LLM and RAG benchmarks.",
-    "tools": [
-      "Python",
-      "EvalScope"
-    ],
-    "image": "assets/images/project1.jpeg",
-    "link": "",
-    "year": 2025,
-    "code_link": ""
-  },
-  {
-    "title": "Document Intelligence API (OCR & Extraction)",
-    "image": "assets/images/project1.jpeg",
-    "link": "",
-    "description": "Document-intelligence API for ingestion, OCR, extraction, and chunking, refined across multiple iterations.",
-    "year": 2025,
-    "tools": [
-      "Python",
-      "FastAPI",
-      "Celery",
-      "Redis",
-      "SQLModel",
-      "Pydantic",
-      "Google Gemini",
-      "PyMuPDF"
-    ],
-    "code_link": ""
-  },
-  {
-    "title": "Voice-to-Voice AI Assistant",
-    "image": "assets/images/project2.jpeg",
-    "link": "",
-    "description": "Real-time voice assistant with speech-to-speech interaction, multilingual support, and RAG grounding, iterated across stacks.",
-    "year": 2025,
-    "tools": [
-      "Python",
-      "FastAPI",
-      "Chainlit",
-      "Qdrant",
-      "OpenAI Realtime",
-      "ElevenLabs",
-      "LiteLLM",
-      "Docker"
-    ],
-    "code_link": ""
-  },
-  {
-    "title": "IT Support Assistant Platform",
-    "image": "assets/images/project1_bis.jpg",
-    "link": "",
-    "description": "Support automation platform that ingests IT knowledge sources, detects incident patterns, and powers dashboards for usage and resolution analytics.",
-    "year": 2025,
-    "tools": [
-      "Python",
-      "FastAPI",
-      "Qdrant",
-      "OpenAI",
-      "Google GenAI",
-      "Dash"
-    ],
-    "code_link": ""
-  },
-  {
-    "title": "Enterprise RAG & Knowledge Platform",
-    "image": "assets/images/project1.jpeg",
-    "link": "",
-    "year": 2025,
-    "code_link": "",
-    "description": "Enterprise RAG platform with document/email ingestion, semantic search, and agentic workflows; includes a knowledge portal with admin QA, analytics, and an ingestion pipeline with metadata enrichment, plus domain-specific assistants for technical documents and support/upsell use cases.",
-    "tools": [
-      "Python",
-      "FastAPI",
-      "Chainlit",
-      "Qdrant",
-      "Prefect",
-      "LiteLLM",
-      "React",
-      "TypeScript",
-      "Vite",
-      "PostgreSQL",
-      "SQLite",
-      "PDF Processing",
-      "OpenAI"
-    ]
-  }
+	{
+		"title": "H&M Personalized Fashion Recommendations System",
+		"image": "assets/images/project6.jpg",
+		"link": "",
+		"description": "Using the purchase history of customers along with metadata about articles to predict whether which articles the customers will purchase in the future days.",
+		"date": 2024,
+		"tools": [
+			"Python",
+			"Pandas",
+			"Matplotlib/Seaborn",
+			"PyTorch",
+			"Two Tower Models",
+			"MLflow",
+			"Git"
+		],
+		"code_link": "https://github.com/koadegno/H_M_Personalized_Fashion_Recommendations"
+	},
+	{
+		"title": "Predict H1N1 and Seasonal Flu Vaccines",
+		"image": "assets/images/project3.jpeg",
+		"link": "",
+		"description": "Predict whether people received H1N1 and seasonal flu vaccines using information they shared about their backgrounds, opinions, and health behaviors, using DrivenData datasets and using various models.",
+		"date": 2024,
+		"tools": [
+			"Python",
+			"Pandas",
+			"Matplotlib/Seaborn",
+			"Scikit-learn",
+			"Logistic Regression",
+			"Random Forest",
+			"XGBoost",
+			"PyTorch",
+			"BayesSearchCV / GridSearchCV",
+			"Git"
+		],
+		"code_link": "https://github.com/koadegno/predict-flu-vaccines"
+	},
+	{
+		"title": "Stock Price Prediction using PySpark and Yahoo API",
+		"image": "assets/images/project4.jpg",
+		"link": "",
+		"description": "The PySpark process is divided into two parts, the sender and the receiver, they use sockets to communicate. The sender fetches stock data from the Yahoo Finance API and preprocess it. On\n the receiver side, it processes the data in batches to predict stock prices using Linear Regression and Neural Networks. The system handles large-scale data processing and prediction, enabling effective stock price forecasting.",
+		"date": 2024,
+		"tools": [
+			"Python",
+			"Pandas",
+			"PySpark",
+			"Yahoo Finance API",
+			"Neural Networks",
+			"Git",
+			"Team Project"
+		],
+		"code_link": ""
+	},
+	{
+		"title": "Personal Book Recommendations System",
+		"image": "assets/images/project1.jpeg",
+		"link": "",
+		"description": "A personalized recommendation system that uses my reading preferences and history to suggest me books.",
+		"date": 2024,
+		"tools": [
+			"Python",
+			"Pandas",
+			"Huggingface",
+			"Streamlit",
+			"Git"
+		],
+		"code_link": ""
+	},
+	{
+		"title": "French Book Data Collection Process",
+		"image": "assets/images/project1_bis.jpg",
+		"link": "",
+		"description": "Pipeline to scrape web page and collect data about French books. The datasets was stored in a csv file with more than 50,000 books",
+		"date": 2024,
+		"tools": [
+			"Python",
+			"Pandas",
+			"Numpy",
+			"Selenium",
+			"Web Scrapping",
+			"Git"
+		],
+		"code_link": ""
+	},
+	{
+		"title": "Automated Summarization of Long Documents",
+		"image": "assets/images/project2.jpeg",
+		"link": "",
+		"description": "Developing and evaluating automated summarization models to effectively summarize long documents. The best model combines traditional and advanced Transformer-based approaches.",
+		"date": 2024,
+		"tools": [
+			"Python",
+			"Pandas",
+			"Huggingface",
+			"NLP",
+			"Bart / GPT-3 / C2F-FAR",
+			"PyTorch",
+			"Git"
+		],
+		"code_link": ""
+	},
+	{
+		"title": "SIP Audio Translation POC",
+		"description": "Proof-of-concept for SIP call audio translation using Asterisk and a FastAPI bridge.",
+		"tools": [
+			"Python",
+			"FastAPI",
+			"Asterisk",
+			"Docker"
+		],
+		"image": "assets/images/sip.png",
+		"link": "",
+		"date": "11/2025",
+		"code_link": ""
+	},
+	{
+		"title": "Multimodal Capture Q&A Assistant",
+		"description": "Agentic chatbot that answers questions based on recorded webcam/audio sessions using vector search.",
+		"tools": [
+			"Python",
+			"FastAPI",
+			"Chainlit",
+			"Qdrant",
+			"LiteLLM",
+			"Docker"
+		],
+		"image": "assets/images/rag_video.png",
+		"link": "",
+		"date": 2025,
+		"code_link": ""
+	},
+	{
+		"title": "NL-to-SQL Analytics Assistant",
+		"description": "Natural-language to SQL assistant that generates CSV/Excel reports with validation and location tooling (postcode lookup, radius search, and municipality matching).",
+		"tools": [
+			"Python",
+			"FastAPI",
+			"Chainlit",
+			"SQLAlchemy",
+			"LiteLLM",
+			"Shapely"
+		],
+		"image": "assets/images/nl_to_sql_2.png",
+		"link": "",
+		"date": "31/12/2025",
+		"code_link": ""
+	},
+	{
+		"title": "Document Intelligence API (OCR & Extraction)",
+		"image": "assets/images/ocr_api.png",
+		"link": "",
+		"description": "Document-intelligence API for ingestion, OCR, extraction, and chunking, refined across multiple iterations.",
+		"date": 2025,
+		"tools": [
+			"Python",
+			"FastAPI",
+			"Celery",
+			"Redis",
+			"SQLModel",
+			"Pydantic",
+			"Google Gemini",
+			"PyMuPDF"
+		],
+		"code_link": ""
+	},
+	{
+		"title": "Voice-to-Voice AI Assistant",
+		"image": "assets/images/v2v_rag.png",
+		"link": "",
+		"description": "Real-time voice assistant with speech-to-speech interaction, multilingual support, and RAG grounding, iterated across stacks.",
+		"date": "30/12/2025",
+		"tools": [
+			"Python",
+			"FastAPI",
+			"Chainlit",
+			"Qdrant",
+			"OpenAI Realtime",
+			"ElevenLabs",
+			"LiteLLM",
+			"Docker"
+		],
+		"code_link": ""
+	},
+	{
+		"title": "IT Support Assistant Platform",
+		"image": "assets/images/incidentt_detection_2.png",
+		"link": "",
+		"description": "Support automation platform that ingests IT knowledge sources, detects incident patterns, and powers dashboards for usage and resolution analytics.",
+		"date": 2025,
+		"tools": [
+			"Python",
+			"FastAPI",
+			"Qdrant",
+			"OpenAI",
+			"Google GenAI",
+			"Dash"
+		],
+		"code_link": ""
+	},
+	{
+		"title": "Enterprise RAG & Knowledge Platform",
+		"image": "assets/images/basic_rag.png",
+		"link": "",
+		"date": "29/12/2025",
+		"code_link": "",
+		"description": "Enterprise RAG platform with document/email ingestion, semantic search, and agentic workflows; includes a knowledge portal with admin QA, analytics, and an ingestion pipeline with metadata enrichment, plus domain-specific assistants for technical documents and support/upsell use cases.",
+		"tools": [
+			"Python",
+			"FastAPI",
+			"Chainlit",
+			"Qdrant",
+			"Prefect",
+			"LiteLLM",
+			"React",
+			"TypeScript",
+			"Vite",
+			"PostgreSQL",
+			"SQLite",
+			"PDF Processing",
+			"OpenAI"
+		]
+	}
 ]
