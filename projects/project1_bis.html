@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Collection Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/project_styles.css">
 </head>
 <body>
-	<nav class="sidebar">
-        <a href="../index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="../contact.html">Contact</a>
-    </nav>
-	<main class="content">
+    <header class="sticky top-0 z-50 bg-background\75 py-6 backdrop-blur-sm px-10">
+        <nav class="flex items-center justify-between">
+            <ul class="flex gap-4 sm:gap-8">
+                <li class="link"> <a class="nav-link" href="../index.html">Home</a></li>
+                <li class="link"> <a class="nav-link nav-active" href="../projects.html">Projects</a></li>
+                <li class="link"> <a class="nav-link" href="mailto:vinove.adegnon@hotmail.com">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main>
 		<section class="project-header">
 			<h1>French Book Data Collection Process</h1>
 			<p>This project involves scraping book details from a specified online source. The goal is to collect comprehensive information about each book in french, including title, author, publication date, editor, rating, summary, and genre, as well as images for visual representation. The steps below detail the data collection process used :</p>
@@ -66,7 +75,9 @@
 		<p>The data collected is then saved in a CSV format, allowing for easy analysis and visualization in subsequent parts of the project.</p>
 
 		<div class="back-btn">
-            <a href="project1.html" class="button">Back to Book Recommendation Project</a>
+            <a href="project1.html"
+                class="cta-btn inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground">Back
+                to Book Recommendation Project</a>
         </div>
 	</main>
 </body>
