@@ -17,11 +17,11 @@ function loadProjects() {
 				// Title and description text loading
 				const cardText = document.createElement("div");
 				cardText.classList.add("p-6", "pt-0", "flex", "flex-col", "gap-2")
-				cardText.innerHTML = `<h3 class="font-semibold leading-none tracking-tight">
+				cardText.innerHTML = `<h3 class="font-semibold leading-none tracking-tight card-title">
 				${project.title}
 				</h3>
 				<div class"prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-					<p>${project.description}</p>
+					<p class="card-subtitle">${project.description}</p>
 				</div>
 				`;
 				card.appendChild(cardText);

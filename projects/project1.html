@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalized Book Recommendation System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/project_styles.css">
 </head>
@@ -12,9 +17,9 @@
 	<header class="sticky top-0 z-50 bg-background\75 py-6 backdrop-blur-sm px-10">
 		<nav class="flex items-center justify-between">
 			<ul class="flex gap-4 sm:gap-8">
-				<li class="link"> <a href="index.html">Home</a></li>
-				<li class="link"> <a href="projects.html">Projects</a></li>
-				<li class="link"> <a href="mailto:vinove.adegnon@hotmail.com">Contact</a></li>
+				<li class="link"> <a class="nav-link" href="../index.html">Home</a></li>
+				<li class="link"> <a class="nav-link nav-active" href="../projects.html">Projects</a></li>
+				<li class="link"> <a class="nav-link" href="mailto:vinove.adegnon@hotmail.com">Contact</a></li>
 	
 			</ul>
 	
@@ -92,7 +97,9 @@
 
         <!-- Back to Portfolio Button -->
         <div class="back-btn">
-            <a href="../index.html" class="button">Back to Portfolio</a>
+            <a href="../index.html"
+                class="cta-btn inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground">Back
+                to Portfolio</a>
         </div>
     </main>
 
