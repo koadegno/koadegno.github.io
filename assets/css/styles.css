@@ -36,8 +36,8 @@ html {
 
 :root {
 	color-scheme: light;
-	--font-sans: "Georgia", "Times New Roman", serif;
-	--font-serif: "Garamond", Georgia, serif;
+	--font-sans: "Sora", "Helvetica Neue", Arial, sans-serif;
+	--font-serif: "Fraunces", "Garamond", "Times New Roman", serif;
 	--background: 45, 30%, 96%;
 	--header-background: 40, 30%, 96%, 0.9;
 	--foreground: 25, 25%, 20%;
@@ -131,8 +131,8 @@ html {
 }
 
 .light {
-	--font-sans: "Georgia", "Times New Roman", serif;
-	--font-serif: "Garamond", Georgia, serif;
+	--font-sans: "Sora", "Helvetica Neue", Arial, sans-serif;
+	--font-serif: "Fraunces", "Garamond", "Times New Roman", serif;
 	--background: 45, 30%, 96%;
 	--foreground: 25, 25%, 20%;
 	--card: 40, 25%, 94%;
@@ -162,9 +162,11 @@ html {
 
 body {
 	margin: 0;
-	line-height: inherit;
+	line-height: 1.65;
 	background-color: hsl(var(--background));
 	color: hsl(var(--foreground));
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
 }
 
 hr {
@@ -181,6 +183,13 @@ h5,
 h6 {
 	font-size: inherit;
 	font-weight: inherit
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--font-serif);
+	letter-spacing: -.015em
 }
 
 a {
@@ -1002,13 +1011,25 @@ ul {
 
 .title {
 	font-family: var(--font-serif);
-	font-size: 3rem;
-	line-height: 1;
-	letter-spacing: .025em;
+	letter-spacing: -.015em;
 	text-decoration-color: hsl(var(--border)/.75);
 	text-decoration-thickness: 2px
 }
 
+.title-hero {
+	font-size: clamp(2.75rem, 4.6vw, 4.25rem);
+	line-height: 1.05
+}
+
+.title-page {
+	font-size: clamp(2.25rem, 3.4vw, 3.25rem);
+	line-height: 1.1
+}
+
+.title-section {
+	font-size: clamp(1.75rem, 2.2vw, 2.5rem);
+	line-height: 1.15
+}
 
 .text-2xl {
 	font-size: 1.5rem;
@@ -1347,4 +1368,3 @@ ul {
     justify-content: center;
     padding: 20px 0;
 }
-
